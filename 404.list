@@ -9,6 +9,8 @@ HOST-SUFFIX, meituangov.cn, reject
 HOST-SUFFIX, report.meituan.com, reject
 HOST-SUFFIX, wmlog.meituan.com, reject
 
+# 贴吧 
+HOST,im.tieba.baidu.com,REJECT
 
 
 # > 懂车帝
