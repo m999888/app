@@ -190,8 +190,7 @@ HOST-SUFFIX,youtubemobilesupport.com,YouTube
 HOST-SUFFIX,yt.be,YouTube
 HOST-SUFFIX,ytimg.com,YouTube
 
-HOST-WILDCARD,youtube.*.*,YouTube
-HOST-WILDCARD,youtube.com.*,YouTube
+
 HOST-KEYWORD,youtube,YouTube
 USER-AGENT,*youtube*,YouTube
 USER-AGENT,YouTube*,YouTube
