@@ -1,0 +1,11 @@
+#!url=https://raw.githubusercontent.com/m999888/app/main/QiMao.sgmodule
+#!name=7猫小说
+#!desc=解锁VIP
+[Script]
+
+# > 七猫小说(2022.01.18)
+QiMaoXiaoShuo = type=http-response,pattern=^https?:\/\/(api-\w+|xiaoshuo)\.wtzw\.com\/api\/v\d\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/QiMaoXiaoShuo.js
+
+[MITM]
+
+hostname = %APPEND% *.wtzw.com
