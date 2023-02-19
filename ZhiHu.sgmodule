@@ -1,6 +1,8 @@
-[Url Rewrite]
+#!url= https://raw.githubusercontent.com/m999888/app/main/ZhiHu.sgmodule
 
 #!name=知乎净化
+
+[Url Rewrite]
 
 ^https?:\/\/118\.89\.204\.198 - reject-dict
 ^https?:\/\/103\.41\.167\.237 - reject-dict
