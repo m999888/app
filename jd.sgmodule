@@ -1,10 +1,10 @@
-#!name=❏  京东比价_𝗟𝗶𝘁𝗲
-#!desc=京东、淘宝历史价格-京粉
+#!name=❏  京东比价
+#!desc=京东历史价格
 #!system=ios
 
 [Script]
 # > 京东比价
-京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price_lite.js
+http-response ^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) requires-body=1,script-path= https://raw.githubusercontent.com/zwf234/rules/master/js/jd_price.js
 
 [MITM]
 hostname = %APPEND% api.m.jd.com
