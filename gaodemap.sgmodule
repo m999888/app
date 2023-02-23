@@ -1,30 +1,26 @@
 #!name=高德地图净化
-[Url Rewrite]
 
-# > 高德地图_Tip请求@ddgksf2013
-^https?:\/\/.*\.amap\.com\/ws\/boss\/order_web\/\w{8}_information - reject-200
-# > 高德地图_通用广告请求@ddgksf2013
-^https?:\/\/.*\.amap\.com\/ws\/asa\/ads_attribution - reject
-# > 高德地图_搜索框scene@ddgksf2013
-^https?:\/\/.*\.amap\.com\/ws\/shield\/scene\/recommend - reject-dict
-# > 高德地图_首页左上角gif@ddgksf2013
-^https?:\/\/.*\.amap\.com\/uploadimg\/\w+\.gif - reject-img
-# > 高德地图_左下天气@ddgksf2013
-^https?:\/\/.*\.amap\.com\/ws\/valueadded\/weather - reject-dict
+[URL Rewrite]
+# 这条必须屏蔽，否则模块无效
+amdc\.m\.taobao\.com - reject
+# 通用广告请求
+^https?:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution - reject
+
+[Map Local]
+# 搜索框 | 左下天气
+^https?:\/\/m5\.amap\.com\/ws\/(shield\/scene\/recommend|valueadded\/weather) data="https://raw.githubusercontent.com/kokoryh/Script/master/data/blank_dict.json"
+# Tip请求，如招聘代驾的广告等
+^https?:\/\/m5-zb\.amap\.com\/ws\/boss\/order_web\/\w{8}_information data="https://raw.githubusercontent.com/kokoryh/Script/master/data/blank.txt"
 
 [Script]
-
-# > 高德地图_首页底部处理@ddgksf2013
-amap = type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/faas\/amap-navigation\/main-page,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
-# > 高德地图_开屏广告@ddgksf2013
-amap = type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/valueadded\/alimama\/splash_screen,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
-# > 高德地图_首页顶部推广@ddgksf2013
-amap = type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/msgbox\/pull,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
-# > 高德地图_我的页面@ddgksf2013
-amap = type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaas,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
-# > 高德地图_搜索框热词@ddgksf2013
-amap = type=http-response,pattern=^https?:\/\/.*\.amap\.com\/ws\/shield\/search\/new_hotword,requires-body=1,max-size=0,script-path=https://github.com/ddgksf2013/Scripts/raw/master/amap.js
+# 搜索框热词 | 附近页面 | 我的页面 | 首页右中
+http-response ^https?:\/\/m5\.amap\.com\/ws\/shield\/(search\/(new_hotword|nearbyrec_smart)|dsp\/profile\/index\/nodefaas|frogserver\/aocs\/updatable) requires-body=1,script-path=https://raw.githubusercontent.com/kokoryh/Script/master/js/amap.js
+# 开屏广告 | 首页底部 | 底栏角标
+http-response ^https?:\/\/m5\.amap\.com\/ws\/(valueadded\/alimama\/splash_screen|faas\/amap-navigation\/main-page|message\/notice\/list) requires-body=1,script-path=https://raw.githubusercontent.com/kokoryh/Script/master/js/amap.js
+# 打车页面
+http-response ^https?:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource requires-body=1,script-path=https://raw.githubusercontent.com/kokoryh/Script/master/js/amap.js
+# 首页顶部横幅
+http-response ^https?:\/\/sns\.amap\.com\/ws\/msgbox\/pull requires-body=1,script-path=https://raw.githubusercontent.com/kokoryh/Script/master/js/amap.js
 
 [MITM]
-
-hostname = %APPEND% *amap.com
+hostname = %INSERT% m5*.amap.com, sns.amap.com
