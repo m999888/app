@@ -4,6 +4,7 @@
 #!author=Semporia
 #!homepage=https://github.com/Semporia/TikTok-Unlock
 #!icon= https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Social_Media/TikTok.png
+#!https://raw.githubusercontent.com/Tartarus2014/Surge-Script/master/Unlock/TikTokUS.sgmodule
 
 [URL Rewrite]
 (?<=_region=)CN(?=&) US 307
