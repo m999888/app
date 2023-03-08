@@ -1,8 +1,0 @@
-#!name=wps解锁
-[Script]
-
-WPS = type=http-response,pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js
-
-[MITM]
-
-hostname = %APPEND% account.wps.cn,*account.wps.com
