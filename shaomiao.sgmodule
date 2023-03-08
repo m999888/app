@@ -1,7 +1,0 @@
-#!name=全能扫描VIP破解
-
-[Script]
-FScannerVipCrack = type=http-response,pattern=^https?:\/\/scanner\.jianse\.tv\/api\/users,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/FScannerVipCrack.js
-
-[MITM]
-hostname= %APPEND% scanner.jianse.tv
