@@ -1,5 +1,5 @@
+#chatGPT 分流
 
-
-HOST-suffix,openai.com
+HOST-SUFFIX,openai.com
 HOST,cdn.auth0.com
 HOST,openaiapi-site.azureedge.net
