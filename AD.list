@@ -251,7 +251,7 @@ DOMAIN-SUFFIX,nsclick.baidu.com
 DOMAIN,hm.baidu.com
 DOMAIN,hmma.baidu.com
 # > 百度贴吧屏蔽域名dns查询
-IP-CIDR,180.76.76.200/32,REJECT
+
 # > 哔哩哔哩
 DOMAIN-SUFFIX,cm.bilibili.com
 DOMAIN-KEYWORD, api.sobot.com
