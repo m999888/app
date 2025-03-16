@@ -74,7 +74,6 @@ DOMAIN, i.snssdk.com
 DOMAIN, is.snssdk.com
 DOMAIN, open.e.kuaishou.com
 DOMAIN-SUFFIX, miaozhen.com
-DOMAIN-KEYWORD, -ad-sign.byteimg.com
 DOMAIN-KEYWORD, -tos.pstatp.com
 DOMAIN-KEYWORD, asiad.byteactivity
 DOMAIN-KEYWORD, pangolin-sdk-toutiao
@@ -232,7 +231,7 @@ IP6-CIDR, 2402:4e00:1200:ed00:0:9089:6dac:96b6/128
 # >>>>>>>>>>>>>>> ✅ # ✅ <<<<<<<<<<<<<<
 # 广告联盟
 DOMAIN-SUFFIX, miaozhen.com
-DOMAIN-KEYWORD, -ad-sign.byteimg.com
+
 DOMAIN-KEYWORD, -tos.pstatp.com
 DOMAIN-KEYWORD, asiad.byteactivity
 DOMAIN-KEYWORD, pangolin-sdk-toutiao
@@ -626,8 +625,8 @@ DOMAIN-KEYWORD, image.bianxianmao.com
 ip-cidr, 203.107.1.1/24, no-resolve
 
 # > 懂车帝
-DOMAIN-KEYWORD, p3-pack.byteimg.com
-DOMAIN-KEYWORD, p6-pack.byteimg.com
+
+
 
 # > 懂球帝
 DOMAIN-KEYWORD, apimg.qunliao.info
@@ -656,7 +655,7 @@ DOMAIN-SUFFIX, ad.duoduo.link
 
 # >>>>>>>>>>>>>>> ✅ F ✅ <<<<<<<<<<<<<<
 # > 番茄小说
-DOMAIN-SUFFIX, byteimg.com, DIRECT
+
 DOMAIN, i.snssdk.com
 DOMAIN, i-lq.snssdk.com
 DOMAIN, dig.bdurl.net
@@ -1113,7 +1112,7 @@ DOMAIN-KEYWORD, api-access.pangolin-sdk-toutiao.com
 ;DOMAIN-KEYWORD, bytesmanager.com
 ;DOMAIN-KEYWORD, mssdk-bu.bytedance.com
 ;DOMAIN-KEYWORD, 365yg.com
-;DOMAIN-KEYWORD, ppx.byteimg.com
+
 ;DOMAIN-KEYWORD, i.snssdk.com
 
 # > 影响端传媒正常运行，默认关闭
@@ -1887,7 +1886,7 @@ DOMAIN-SUFFIX, zhengxiaoliu.top
 # > 字节跳动
 DOMAIN, ad.zijieapi.com
 DOMAIN-SUFFIX, -normal-lq.zijieapi.com
-DOMAIN-KEYWORD, ad-sign.byteimg.com
+
 
 
 
@@ -10279,4 +10278,3 @@ DOMAIN-SUFFIX, zoomanalytics.co
 DOMAIN-SUFFIX, ads.linkedin.com
 DOMAIN, analytics.slashdotmedia.com
 DOMAIN, zgsdk.zhugeio.com
-
