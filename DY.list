@@ -1,0 +1,16 @@
+# Douyin Ads Block
+DOMAIN,ad.douyin.com,REJECT
+DOMAIN,ads.douyin.com,REJECT
+DOMAIN-SUFFIX,mon.zijieapi.com,REJECT
+DOMAIN-SUFFIX,log.snssdk.com,REJECT
+DOMAIN-SUFFIX,log.byteoversea.com,REJECT
+DOMAIN-SUFFIX,ad.bytedance.com,REJECT
+DOMAIN-SUFFIX,ad.toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin.snssdk.com,REJECT
+
+URL-REGEX,".*douyin.*ad.*",REJECT
+URL-REGEX,".*bytedance.*ad.*",REJECT
+URL-REGEX,".*aweme.*/ad/.*",REJECT
+URL-REGEX,".*aweme/.*/ad.*$",REJECT
+URL-REGEX,".*api.*\/splash\/ad.*",REJECT
+URL-REGEX,".*promotion.*",REJECT
