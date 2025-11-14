@@ -1,0 +1,18 @@
+# Tmall Ads Block
+DOMAIN-SUFFIX,alimama.com,REJECT
+DOMAIN-SUFFIX,mmstat.com,REJECT
+DOMAIN-SUFFIX,atanx.alicdn.com,REJECT
+DOMAIN-SUFFIX,ad.tmall.com,REJECT
+DOMAIN-SUFFIX,ads.tmall.com,REJECT
+DOMAIN,adashx.ut.taobao.com,REJECT
+
+# Tmall Splash Ads
+URL-REGEX,.*tmall.*splash.*,REJECT
+URL-REGEX,.*tmall.*startup.*ad.*,REJECT
+URL-REGEX,.*tmall.*startup.*,REJECT
+
+# General Alibaba Ads
+URL-REGEX,.*ali.*ad.*,REJECT
+URL-REGEX,.*alicdn.*ad.*,REJECT
+URL-REGEX,.*taobao.*ad.*,REJECT
+URL-REGEX,.*amdc.m.taobao.com.*,REJECT
