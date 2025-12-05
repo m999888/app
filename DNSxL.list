@@ -2,7 +2,6 @@ DOMAIN-SUFFIX,dnsleaktest.com,PROXY
 DOMAIN-SUFFIX,dnsleak.com,PROXY
 DOMAIN-SUFFIX,expressvpn.com,PROXY
 DOMAIN-SUFFIX,nordvpn.com,PROXY
-DOMAIN-SUFFIX,surfshark.com,PROXY
 DOMAIN-SUFFIX,ipleak.net,PROXY
 DOMAIN-SUFFIX,perfect-privacy.com,PROXY
 DOMAIN-SUFFIX,browserleaks.com,PROXY
