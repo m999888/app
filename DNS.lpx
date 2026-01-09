@@ -552,7 +552,8 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
 geosite:cn = server:https://223.5.5.5/dns-query
 
 # 针对常见的中国顶级域名加强匹配
-*.cn = server:https://dns.alidns.com/dns-query
+*.cn = server:https://223.5.5.5/dns-query
+
 
 
 
