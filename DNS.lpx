@@ -7,7 +7,7 @@
 
 [General]
 # 这里确保启用 DNS 解析优化
-dns-server = https://dns.google/dns-query, https://1.1.1.1/dns-query
+#dns-server = https://dns.google/dns-query, https://1.1.1.1/dns-query
 [Host]
 # --- CUSTOM HOSTS ---
 # > IPv6
@@ -554,4 +554,5 @@ geosite:cn = server:https://dns.alidns.com/dns-query
 # 针对常见的中国顶级域名加强匹配
 *.cn = server:https://dns.alidns.com/dns-query
 *.中国 = server:https://dns.alidns.com/dns-query
+
 
