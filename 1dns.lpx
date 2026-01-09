@@ -1,9 +1,0 @@
-[General]
-
-[Host]
-geosite:cn = server:https://223.5.5.5/dns-query,quic://223.5.5.5:853
-*.cn = server:https://223.5.5.5/dns-query,quic://223.5.5.5:853,
-# 将 其它 设置为默认 DNS（剩下的全部走这个）
-
-dns-server = https://dns.google/dns-query
-dns-server = https://1.1.1.1/dns-query
