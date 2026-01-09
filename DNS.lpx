@@ -53,85 +53,85 @@ alt8-mtalk.google.com = 3.3.3.3
 # --- CUSTOM DNS ---
 # > Modify Contents
 # Google CDN
-blog.google = server:https://223.5.5.5/dns-query
-googletraveladservices.com = server:https://223.5.5.5/dns-query
-dl.google.com = server:https://223.5.5.5/dns-query
-dl.l.google.com = server:https://223.5.5.5/dns-query
-clientservices.googleapis.com = server:https://223.5.5.5/dns-query
-update.googleapis.com = server:https://223.5.5.5/dns-query
-translate.googleapis.com = server:https://223.5.5.5/dns-query
-fonts.googleapis.com = server:https://223.5.5.5/dns-query
+blog.google = server:119.29.29.29
+googletraveladservices.com = server:119.29.29.29
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
+clientservices.googleapis.com = server:119.29.29.29
+update.googleapis.com = server:119.29.29.29
+translate.googleapis.com = server:119.29.29.29
+fonts.googleapis.com = server:119.29.29.29
 fonts.gstatic.com = server:119.29.29.29
 # Google STUN
-stun.l.google.com = server:https://223.5.5.5/dns-query
-stun?.l.google.com = server:https://223.5.5.5/dns-query
+stun.l.google.com = server:system
+stun?.l.google.com = server:system
 
 # > Router Admin Panel
 # Ubiquiti Unifi Network App
-*.id.ui.direct = server:https://223.5.5.5/dns-query
+*.id.ui.direct = server:system
 # Ubiquiti Unifi Portal
-# unifi.ui.com = server:https://223.5.5.5/dns-query
+# unifi.ui.com = server:system
 # Ubiquiti Unifi OS
-unifi.local = server:https://223.5.5.5/dns-query
+unifi.local = server:system
 # Ubiquiti Unifi Controller
-# network.unifi.ui.com = server:https://223.5.5.5/dns-query
+# network.unifi.ui.com = server:system
 # Ubiquiti Amplifi Router
-amplifi.lan = server:https://223.5.5.5/dns-query
+amplifi.lan = server:system
 # Synology Router
-router.synology.com = server:https://223.5.5.5/dns-query
+router.synology.com = server:system
 # Razer Sila Router
-sila.razer.com = server:https://223.5.5.5/dns-query
+sila.razer.com = server:system
 # Asus Router
-router.asus.com = server:https://223.5.5.5/dns-query
+router.asus.com = server:system
 # Netgear Router
-routerlogin.net = server:https://223.5.5.5/dns-query
+routerlogin.net = server:system
 # Netgear Obri Router
-orbilogin.com = server:https://223.5.5.5/dns-query
+orbilogin.com = server:system
 # Linksys Router
-www.LinksysSmartWiFi.com = server:https://223.5.5.5/dns-query
-LinksysSmartWiFi.com = server:https://223.5.5.5/dns-query
-myrouter.local = server:https://223.5.5.5/dns-query
+www.LinksysSmartWiFi.com = server:system
+LinksysSmartWiFi.com = server:system
+myrouter.local = server:system
 # Aurba Router
-instant.arubanetworks.com = server:https://223.5.5.5/dns-query
-setmeup.arubanetworks.com = server:https://223.5.5.5/dns-query
+instant.arubanetworks.com = server:system
+setmeup.arubanetworks.com = server:system
 # 小米 Mi WiFi Router
-www.miwifi.com = server:https://223.5.5.5/dns-query
-miwifi.com = server:https://223.5.5.5/dns-query
+www.miwifi.com = server:system
+miwifi.com = server:system
 # 华为 Huawei Router
-mediarouter.home = server:https://223.5.5.5/dns-query
+mediarouter.home = server:system
 # TP-Link Router
-tplogin.cn = server:https://223.5.5.5/dns-query
-tplinklogin.net = server:https://223.5.5.5/dns-query
-tplinkwifi.net = server:https://223.5.5.5/dns-query
+tplogin.cn = server:system
+tplinklogin.net = server:system
+tplinkwifi.net = server:system
 # 水星 MERCURY Router
-melogin.cn = server:https://223.5.5.5/dns-query
+melogin.cn = server:system
 # 迅捷 FAST Router
-falogin.cn = server:https://223.5.5.5/dns-query
+falogin.cn = server:system
 # 腾达 Tenda Router
-tendawifi.com = server:https://223.5.5.5/dns-query
+tendawifi.com = server:system
 # 磊科 Netcore Router
-leike.cc = server:https://223.5.5.5/dns-query
+leike.cc = server:system
 # 中兴 ZTE Router
-zte.home = server:https://223.5.5.5/dns-query
+zte.home = server:system
 # 斐讯 PHICOMM Router
-p.to = server:https://223.5.5.5/dns-query
-phicomm.me = server:https://223.5.5.5/dns-query
+p.to = server:system
+phicomm.me = server:system
 # 极路由 HiWiFi Router
-hiwifi.com = server:https://223.5.5.5/dns-query
+hiwifi.com = server:system
 # 迅雷路由
-peiluyou.com = server:https://223.5.5.5/dns-query
+peiluyou.com = server:system
 # M2M routers at MiFi Hotspot
-_hotspot_.m2m = server:https://223.5.5.5/dns-query
+_hotspot_.m2m = server:system
 # csl Wi-Fi
-hotspot.cslwifi.com = server:https://223.5.5.5/dns-query
+hotspot.cslwifi.com = server:system
 
 # > Apple
 # refer: https://support.apple.com/zh-cn/HT210060
-networking.apple = server:https://223.5.5.5/dns-query
+networking.apple = server:https://doh.dns.apple.com/dns-query
 # Apple.com
-*.apple.com = server:https://223.5.5.5/dns-query
+# *.apple.com = server:https://doh.dns.apple.com/dns-query
 # iCloud.com
-*.icloud.com = server:https://223.5.5.5/dns-query
+*.icloud.com = server:https://doh.dns.apple.com/dns-query
 
 # > Alphabet
 # refer: https://developers.google.com/speed/public-dns/docs/doh?hl=zh-cn
@@ -543,4 +543,5 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
 
 # > 🇺🇸 USA
 # Hurricane Electric
+
 *.he.net = server:https://ordns.he.net/dns-query
