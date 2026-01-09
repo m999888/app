@@ -6,7 +6,8 @@
 #!category=🍟 Fries
 
 [General]
-
+# 这里确保启用 DNS 解析优化
+dns-server = https://dns.google/dns-query, https://1.1.1.1/dns-query
 [Host]
 # --- CUSTOM HOSTS ---
 # > IPv6
@@ -545,3 +546,12 @@ upos-sz-upcdntx.bilivideo.com = server:https://doh.pub/dns-query
 # Hurricane Electric
 
 *.he.net = server:https://ordns.he.net/dns-query
+
+# 核心逻辑：利用 geosite 数据库匹配国内域名
+# 将匹配到的域名指定给阿里 DoH 解析
+geosite:cn = server:https://dns.alidns.com/dns-query
+
+# 针对常见的中国顶级域名加强匹配
+*.cn = server:https://dns.alidns.com/dns-query
+*.中国 = server:https://dns.alidns.com/dns-query
+
