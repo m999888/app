@@ -140,37 +140,6 @@ goo.gl = server:https://8.8.8.8/dns-query
 # CloudFlare Workers
 *.workers.dev = server:https://1.1.1.1/dns-query
 
-
-# > 🇭🇰 HKG
-# PCCW Enterprises Limited
-*.pccw.com = server:dns1.pccw.com
-# 1O1O
-*.1010.com.hk = server:dns1.pccw.com
-# csl.
-*.hkcsl.com = server:dns1.pccw.com
-# The CLUB by HKT
-*.theclub.com.hk = server:dns1.pccw.com
-# now.com
-*.now.com = server:dns2.pccw.com
-# Now E
-*.nowe.com = server:dns2.pccw.com
-# Now TV
-*.now-tv.com = server:dns2.pccw.com
-# MOOV
-*.moov.hk = server:dns3.pccw.com
-# viu
-*.viu.com = server:dns3.pccw.com
-# viu tv
-*.viu.tv = server:dns3.pccw.com
-# Hong Kong Cable Television Limited
-*.hkcable.com.hk = server:dns1.hkcable.com.hk
-# i-CABLE
-*.i-cable.com = server:dns2.hkcable.com.hk
-# CABLE TV Service
-*.cabletv.com.hk = server:dns2.hkcable.com.hk
-# KDDI Hong Kong Limited
-*.hk.kddi.com = server:apple.kdd.net.hk
-
 # > 🇹🇼 TWN
 # 中华电信
 *.cht.com.tw = server:https://dns.hinet.net/dns-query
@@ -178,9 +147,6 @@ goo.gl = server:https://8.8.8.8/dns-query
 *.hinet.net = server:https://dns.hinet.net/dns-query
 # 中华电信emome
 *.emome.net = server:https://dns.hinet.net/dns-query
-# So-net Entertainment Taiwan
-so-net.net.tw = server:ns1.so-net.net.tw
-so-net.tw = server:ns1.so-net.net.tw
 # Taiwan Network Information Center
 *.tw = server:https://dns.twnic.tw/dns-query
 *.taipei = server:https://dns.twnic.tw/dns-query
